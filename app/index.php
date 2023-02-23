@@ -164,7 +164,7 @@ else
                     $mindate = "";
                 }
                 ?>
-                $.datepicker.setDefaults({dateFormat: "yy-mm-dd", maxDate: -1,$minDate changeMonth: true, changeYear: true});
+                // $.datepicker.setDefaults({dateFormat: "yy-mm-dd", maxDate: -1,$minDate changeMonth: true, changeYear: true});
             });
             var loadingImage = '<p><img src="./images/loading.gif"></p>';
 

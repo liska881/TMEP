@@ -12,7 +12,7 @@ if(!isset($_GET['doba']) OR !is_numeric($_GET['doba']) OR $_GET['doba'] < 0 OR $
 echo "<h3>{$lang['doba']} {$_GET['doba']}:00 - {$_GET['doba']}:59</h3>";
 
 // formular pro dobu
-echo "<br /><form method='GET' action='{$_SERVER['PHP_SELF']}'>
+echo "<br /><form method='GET' action='{$_SERVER['REQUEST_URI']}'>
       <fieldset>
       <input type='hidden' name='ja' value='{$_GET['ja']}'>
       <input type='hidden' name='je' value='{$_GET['je']}'>

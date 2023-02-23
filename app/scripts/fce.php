@@ -351,7 +351,7 @@ function menuJazyky($jazyky, $vybranyJazyk)
 
         if($jazyk != $vybranyJazyk)
         {
-            $menu .= "<li><a href='{$_SERVER['PHP_SELF']}?ja={$jazyk}&amp;je={$_GET['je']}'>" . strtoupper($jazyk) . "</a></li>";
+            $menu .= "<li><a href='{$_SERVER['REQUEST_URI']}?ja={$jazyk}&amp;je={$_GET['je']}'>" . strtoupper($jazyk) . "</a></li>";
         }
 
     }
@@ -377,7 +377,7 @@ function menuJednotky($jednotky, $vybranaJednotka)
 
         if($index != $vybranaJednotka)
         {
-            $menu .= "<li><a href='{$_SERVER['PHP_SELF']}?je={$index}&amp;ja={$_GET['ja']}' title='{$jednotka}'>{$jednotka}</a></li>";
+            $menu .= "<li><a href='{$_SERVER['REQUEST_URI']}?je={$index}&amp;ja={$_GET['ja']}' title='{$jednotka}'>{$jednotka}</a></li>";
         }
 
     }

@@ -15,7 +15,7 @@ if(!isset($_GET['minuta']) OR !is_numeric($_GET['minuta']) OR $_GET['minuta'] < 
 echo "<h3>{$lang['drivetoutodobou']} ({$_GET['hodina']}:{$_GET['minuta']})</h3>";
 
 // formular pro cas
-echo "<form method='GET' action='{$_SERVER['PHP_SELF']}'>
+echo "<form method='GET' action='{$_SERVER['REQUEST_URI']}'>
       <fieldset>
       <legend>{$lang['cas']}</legend>
       <input type='hidden' name='ja' value='{$_GET['ja']}'>

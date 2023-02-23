@@ -19,7 +19,7 @@ if(strlen($_GET['rozsahdo']) > 10 OR !is_numeric(substr($_GET['rozsahdo'], 0, 4)
 }
 
 // formular pro den
-echo "<form method='GET' action='{$_SERVER['PHP_SELF']}#historie'>
+echo "<form method='GET' action='{$_SERVER['REQUEST_URI']}#historie'>
           <fieldset>
           <legend>{$lang['zobrazitden']}</legend>
           <input type='hidden' name='ja' value='{$_GET['ja']}'>
